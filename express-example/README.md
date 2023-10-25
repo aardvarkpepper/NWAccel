@@ -210,6 +210,119 @@ When interview comes around, M studies leetcode 2 days before, as long as not ma
 2023 Oct 25 (Weds)
 Michael asks for help - on calendar, and in Slack, this is what done.  Wrote next to titles, denoted in Slack, if session with Michael is remote, camera emoji next to title.  If not, in-person.  Every minute on the minute, is it on Zoom?  Is it on Zoom?
 
+2023 Oct 25
+
+jestjs.io/docs/api#describename-fn
+describe (name, fn)
+. . . creates a block that groups together several related tests.
+
+Michael notifies students T-Th live, Monday is remote.  Camera means remote.
+Notes
+
+Today:
+
+MVC Architecture
+Introduction to "controllers" in Express
+TDD to complete an Express Controller w/ describe
+Deploying an Express server
+
+Reviews yesterday topic (test).  Pushes to git.
+git init (in the folder)
+
+Go to gitignore.io
+
+set up node and react there, to have easy to format .gitignore
+
+then vim .gitignore
+untracked files:
+.gitignore
+app.js
+ap.test.js
+package-lock.json
+package.json
+server.js
+
+git add .
+git commit -m "Setup express server, added gitignore and Jes/Supertest'
+
+git push (has no URL)
+Needs to set one up in Github.com, github.com/new, creates actual profile, creates new git repository named after folder.  Copy and paste from github into terminal to create repo.
+
+Now we have this link (in github url) drop to chat.
+https://github.com/rmdashrfv/express-example
+
+Recording will be in Slack.  If there is someone someone is following etc., follow them in github.  Like, solve problem for MikeGPT (in github).  If follow someone on Github, you can see what they do on Github when you go to Github.com.  Last night someone was interacting with repository that is some obscure library that does 90% of what they need done.
+
+"ThePrimeTime" on Youtube - "I feel bad for new programmers"
+
+MVC controller model.  (diagram)
+
+Model defines data structure, e.g. updates application to reflect added items.
+Arrow label updates e.g. list item to show added item
+View defines display (ui) e.g.user clicks add to cart
+arrow to next sends input from user
+arrow from next sometimes updates directly
+Controller contains control logic.  e.g. receives update from view then notifies model to 'add item'.
+arrow to model, "manipulates"
+
+MVC MVC MVC.  What is it in context of application?
+
+In the context of application, how is MVC set up?  This would be the "C" (the app.get res.send . . .  the app.js file)
+
+we are about to introduce the controller.  We have students, if we put entirety of application in file, that would be long.  The file would be long, 100 lines.  There are some people that are dogmatic, if program is 100 lines then they say you need to start modularizing your code.  M may not agree but will show how to modularize code right now.  (that is, split into tinier pieces).
+
+Let's create a file, switch to terminal, going to create a folder called controllers.
+
+mkdir controllers
+touch controllers/studentsController.js
+
+What trying to illustrate is, everything doing around git status after.  Whenever push git never a surprise.  What you push should never ever be a surprise.
+
+So we have a controller file, we will now make a controller.
+
+Bash in resume as skill.  If you can't follow along with M mentally, then learn it.
+
+in terminal, ls
+
+"everything that doesn't start with git is bash"
+
+We do not have a model just yet.  No reason why we can't deploy today.
+
+Let's go to conroller file.  (in terminal vim controllers/studentsController.js I think)
+
+Open up controllers.  Everything in students taken out (here, commented out), dropped in students and add const app = require('../app')
+
+PUll up docs expressjs.com
+
+Routing
+Route methdods
+
+Copy and paste Hello World.
+
+We create a router object, that router is going to handle those requests for us going forward.  This is what we need in our file.
+
+We test routes in browser.  Note:  Review notes around 11:26 AM; Michael refreshed from Github ?
+
+Test-driven development and all this usually pull requests and (?).  We take a task off jira or Github, work through that one little issue adding that feature, once finished, submit code to database.  If the company is organized.  Heh.  Once you submit pull request tests will automatically run, and deployment happens from there.
+
+So let's look into deployments so we see what this looks like in production.
+
+Let's all go to render.com
+https://dashboard.render.com/
+
+If pushed node_modules, how to fix:
+
+in terminal
+rm -rf node_modules/
+
+
+
+
+
+
+
+
+
 
 
 Mail Angie
@@ -222,4 +335,3 @@ Mail Max W, Mark notes.  Marangely too.  + Sherry.  Someone else.  jenny3, Kenye
 https://pursuit-core.slack.com/archives/C0263S5R8EN/p1698157963102779
 
 Documentation for "supertest".  Can't just return any object, has to have specific thing in it.  Test that passes but (?)  Truthy falsy things.
-
