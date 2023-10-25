@@ -315,6 +315,12 @@ If pushed node_modules, how to fix:
 in terminal
 rm -rf node_modules/
 
+git status
+
+then
+
+npm install
+(have to reinstall)
 
 
 
